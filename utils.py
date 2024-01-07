@@ -4,7 +4,7 @@ from diffusers import LMSDiscreteScheduler
 
 import config
 
-def convert_latents_to_pil_images(pipe):
+def convert_latents_to_pil_images(pipe, latents):
     latents = (1 / 0.18215) * latents
     with torch.no_grad():
         image = pipe.vae.decode(latents).sample

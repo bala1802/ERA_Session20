@@ -9,8 +9,9 @@ LOSS_SCALE = 200
 NUM_INFERENCE_STEPS = 50
 BATCH_SIZE = 1
 
+SEEDS = [2000,2000,500,600,100]
 STABLE_DIFFUSION_MODEL = "CompVis/stable-diffusion-v1-4"
-SDCONCEPTS = ['<meeg>', '<midjourney-style>', '<moebius>', ' <Marc_Allante>', '<wlop-style>']
+STABLE_DIFUSION_CONCEPTS = ['<meeg>', '<midjourney-style>', '<moebius>', ' <Marc_Allante>', '<wlop-style>']
 
 #LMS DSCRETE SCHEDULER
 BETA_START = 0.00085
