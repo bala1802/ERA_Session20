@@ -10,3 +10,12 @@ def convert_latents_to_pil_images(pipe):
     images = (image * 255).round().astype("uint8")
     pil_images = [Image.fromarray(image) for image in images]
     return pil_images
+
+def populate_image_grid(imgs, rows, cols):
+    assert len(imgs) == rows*cols
+    w, h = imgs[0].size
+    grid = Image.new('RGB', size=(cols*w, rows*h))
+    
+    for i, img in enumerate(imgs):
+        grid.paste(img, box=(i%cols*w, i//cols*h))
+    return grid
