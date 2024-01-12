@@ -22,12 +22,3 @@ def populate_image_grid(imgs, rows, cols):
     for i, img in enumerate(imgs):
         grid.paste(img, box=(i%cols*w, i//cols*h))
     return grid
-
-def initialize_lms_discrete_scheduler():
-    scheduler = LMSDiscreteScheduler(beta_start = config.BETA_START, 
-                                beta_end = config.BETA_END, 
-                                beta_schedule = config.BETA_SCHEDULE, 
-                                num_train_timesteps = config.NUM_TRAIN_TIMESTEPS)
-    scheduler.set_timesteps(config.NUM_INFERENCE_STEPS)
-    scheduler.timesteps = scheduler.timesteps.to(torch.float32)
-    return scheduler

@@ -159,3 +159,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 experiment.ipynb
+symmetry_loss_analysis.py
+.DS_Store
