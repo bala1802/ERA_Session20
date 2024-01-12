@@ -1,7 +1,7 @@
 import torch
 
-DEVICE = "mps"
-# DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+# DEVICE = "mps"
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 HEIGHT = 512
 WIDTH = 512
 GUIDANCE_SCALE = 8
