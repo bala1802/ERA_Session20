@@ -16,7 +16,6 @@ The purpose of this repository is to understand the architecture of Generative A
 ├── prediction.py
 ├── requirements.txt
 ├── symmetry_loss_analysis.py
-├── tree.txt
 └── utils.py
 ```
 
@@ -39,3 +38,15 @@ In `inference.ipynb`,
 Computing the average absolute difference between the `blue channel` values of each pixel in the batch and the target value of `0.9`. This allows us to measure how far, on average the blue channel deviates from the desired value of `0.9` across all images in the batch
 
 ![Alt text](image-1.png)
+
+### 3. Elastic Deformations
+
+A data augmentation process. Applying the random elastic deformations to get an input image. The Strength and Smoothness of these deformations are controlled by the `alpha` and `sigma` parameters. The process involves generating displacement vectors for each pixel, adding these vectors to an identified grid, and then using the deformed grid to interpolate pixel values from the original image.
+
+![Alt text](image-2.png)
+
+### 4. Saturation
+
+Applied a saturation adjustment to the images, and the error is calculated as the mean absolute pixel-wise difference between the original and the transformed images
+
+![Alt text](image-3.png)
