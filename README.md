@@ -31,3 +31,11 @@ In `inference.ipynb`,
 `prompt = A King riding a horse`
 
 ### 1. Without Loss Function
+
+![Alt text](image.png)
+
+### 2. Blue Channel
+
+Computing the average absolute difference between the `blue channel` values of each pixel in the batch and the target value of `0.9`. This allows us to measure how far, on average the blue channel deviates from the desired value of `0.9` across all images in the batch
+
+![Alt text](image-1.png)
