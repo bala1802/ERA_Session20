@@ -1,9 +1,9 @@
 # ERA_Session20
 
-# Objective:
+## Objective:
 The purpose of this repository is to understand the architecture of Generative Art & Stable Diffusion
 
-# Repository:
+## Repository:
 ```
 .
 ├── LICENSE
@@ -19,3 +19,15 @@ The purpose of this repository is to understand the architecture of Generative A
 ├── tree.txt
 └── utils.py
 ```
+
+## How to execute this repository?
+
+In `inference.ipynb`, 
+    - add the prompt in the `prompt` variable
+    - configure the required loss function and execute the prediction function
+
+## Results
+
+`prompt = A King riding a horse`
+
+### 1. Without Loss Function
