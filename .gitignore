@@ -161,3 +161,4 @@ cython_debug/
 experiment.ipynb
 symmetry_loss_analysis.py
 .DS_Store
+tree.txt
