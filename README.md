@@ -1,4 +1,4 @@
-# ERA_Session20
+# Genrative Art and Stable Diffusion
 
 ## Objective:
 The purpose of this repository is to understand the architecture of Generative Art & Stable Diffusion
